@@ -1,0 +1,61 @@
+Get http://localhost:5600/userApi/get-user
+###
+POST http://localhost:5600/userApi/create-user
+Content-Type: application/json
+
+{
+    "id":200,
+    "name":"Kumar",
+    "age":23
+}
+###
+PUT http://localhost:5600/userasync/update-user
+Content-Type: application/json
+
+{
+    "id": 700,
+    "name": "kumar reddy",
+    "skills": ["HTML", "CSS", "JAVASCRIPT"],
+    "address": {
+        "hno": "23-6-120/3",
+        "pincode": 506001,
+        "city": "chennai"
+    }
+}
+
+###
+DELETE http://localhost:5600/userApi/delete-user/200
+###
+POST http://localhost:5600/sample/create-sample
+Content-Type: application/json
+
+{
+    "id":700,
+    "name":"msccsv",
+    "skills":["HTML","CSS","JAVASCRIPT"],
+    "address":{
+        "hno":"23-6-120/3","pincode":506001,"city":"chennai"
+    }
+}
+###
+Get http://localhost:5600/sample/get-sample
+###
+Get http://localhost:5600/sample/get-sample/chennai/600
+###
+POST http://localhost:5600/userasync/create-user
+Content-Type: application/json
+
+{
+    "id":700,
+    "name":"kumar",
+    "skills":["HTML","CSS","JAVASCRIPT"],
+    "address":{
+        "hno":"23-6-120/3","pincode":506001,"city":"chennai"
+    }
+}
+###
+Get http://localhost:5600/userasync/get-user
+###
+DELETE http://localhost:5600/userasync/delete-user/700
+###
+
